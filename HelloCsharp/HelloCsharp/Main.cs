@@ -12,6 +12,9 @@ namespace HelloCsharp
 			Console.WriteLine("20 x 10 = " + op.Multiply(20, 10) );
 			Console.WriteLine("20 - 10 = " + op.Substraction(20,10));
 			Console.WriteLine("20 / 10 = " + op.Division(20, 10));
+
+			Student stud = new Student();
+			stud.PrintStudentInfo();
 		}
 	}
 
