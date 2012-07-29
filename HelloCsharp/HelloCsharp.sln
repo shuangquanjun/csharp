@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloCsharp", "HelloCsharp\HelloCsharp.csproj", "{8A39B2A0-B008-4683-B1A3-6D6A4971B708}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A39B2A0-B008-4683-B1A3-6D6A4971B708}.Debug|x86.ActiveCfg = Debug|x86
+		{8A39B2A0-B008-4683-B1A3-6D6A4971B708}.Debug|x86.Build.0 = Debug|x86
+		{8A39B2A0-B008-4683-B1A3-6D6A4971B708}.Release|x86.ActiveCfg = Release|x86
+		{8A39B2A0-B008-4683-B1A3-6D6A4971B708}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = HelloCsharp\HelloCsharp.csproj
+	EndGlobalSection
+EndGlobal
