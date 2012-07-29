@@ -6,7 +6,7 @@ namespace HelloCsharp
 	{
 		public static void Main (string[] args)
 		{
-			Console.WriteLine ("Hello Csharp!");
+			Console.WriteLine ("Hello CSharp!");
 		}
 	}
 }
