@@ -15,6 +15,8 @@ namespace HelloCsharp
 
 			Student stud = new Student();
 			stud.PrintStudentInfo();
+
+			Console.WriteLine("try to test master!");
 		}
 	}
 
