@@ -18,6 +18,7 @@ namespace HelloCsharp
 
             Console.WriteLine("Merge test to master!");
             Console.WriteLine("try to develop in monodevelop!");
+            Console.WriteLine("edit in github code editor!");
         }
     }
 
