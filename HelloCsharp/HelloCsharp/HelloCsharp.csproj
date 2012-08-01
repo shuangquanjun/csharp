@@ -42,4 +42,7 @@
     <Compile Include="Vertex3D_impl.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="internal usage.txt" />
+  </ItemGroup>
 </Project>

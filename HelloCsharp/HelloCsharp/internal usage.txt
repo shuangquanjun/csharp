@@ -1,0 +1,60 @@
+被 internal 修饰的东西只能在本程序集（当前项目）内被使用。
+被 protected internal 修饰的属性/方法 可以在其他项目中,被派生类使用
+
+例如有两个项目app1和app2.
+
+app1是启动项目,而app2只是一个类库
+
+/*项目app2*/
+namespace app2
+{
+internal class cInternal  //该类只能在app2中使用(整个类都internal，相当于所有的属性也全都internal了)
+{
+    public int a;//只有app2中可以使用
+    internal int b;//同上，只有app2中可以使用
+}
+
+public class vInternal  //该类可以在app1中使用(只要引用app2即可)  但是在app2之外的其他项目中不能使用此类中被internal修饰的属性/方法
+{
+    internal int a;//只能在app2中使用
+    protected internal int b;//在app2中任意使用，在app1中不可以直接使用，但是可以被app1中的继承自该类的类使用。
+    public int c;//app1 app2中任意使用 
+    protected internal void Display()//在app2中任意使用，在app1中不可以直接使用，但是可以被app1中的继承自该类的类使用。
+    {Console.WriteLine("Hello protected Internal");}
+ }
+
+}//namespace app2
+
+/*项目app1*/
+
+using app2;
+namespace app1
+{
+    class app1()
+    {
+       app2.cInternal  InternalClass = new app2.cInternal();//!!! ERROR !!! - cInternal被internal修饰，只能在app2中使用
+
+       app2.vInternal  InternalVar = new app2.vInternal ();//OK - vInternal 被public修饰，能在任何地方使用
+
+       InternalVar.a = 100;//!!! ERROR !!! - 被internal修饰，只能在app2中使用
+
+       InternalVar.b = 100;//!!! ERROR !!! - 被protected internal修饰，不能在外部项目中直接使用。
+
+       InternalVar.c = 100;//OK
+
+       InternalVar.Display();//!!! ERROR !!! - 被protected internal修饰，不能在外部项目中直接使用。
+
+     }//classAPP1
+
+
+   class InheritFromInternal:app2.vInternal//继承了vInternal,于是可以使用vInternal中被protected internal修饰的属性
+    {
+        base.a = 100;//!!! ERROR !!! - 被修饰为internal的属性只能在app2中使用.
+
+        base.b = 100;//OK - 被修饰为protected internal的属性可以被派生类使用.
+
+        base.Display();//OK - 被修饰为protected internal的属性可以被派生类使用.    
+
+    }//classInheritFromInternal
+
+}//namespace app1
