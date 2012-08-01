@@ -38,6 +38,8 @@
     <Compile Include="Main.cs" />
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="Student.cs" />
+    <Compile Include="Vertex3D.cs" />
+    <Compile Include="Vertex3D_impl.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
