@@ -1,1 +1,14 @@
-﻿<Properties GitUserInfo="UsingGIT" />
+﻿<Properties GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloCsharp\Vertex3D_impl.cs">
+    <Files>
+      <File FileName="HelloCsharp\Vertex3D_impl.cs" Line="32" Column="4" />
+      <File FileName="HelloCsharp\Vertex3D.cs" Line="19" Column="17" />
+      <File FileName="HelloCsharp\Main.cs" Line="14" Column="47" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

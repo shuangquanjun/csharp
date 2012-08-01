@@ -1,8 +1,9 @@
 using System;
 
+//try to implement the partial
 namespace HelloCsharp
 {
-	//define class with partial part!
+	//partial class
 	public partial class Vertex3D
 	{
 		//public method

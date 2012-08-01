@@ -13,8 +13,17 @@ namespace HelloCsharp
 
 		public void PrintStudentInfo()
 		{
-			Console.WriteLine("Student infomation: " + index + " " + name);
+			Console.Write("\n");
+			Console.WriteLine("|-----------begin-----------|");
+			Console.WriteLine("| Student infomation: " + Id + " " + name + " " + Address);
+			Console.WriteLine("|-----------end  -----------|");
+			Console.Write("\n");
 		}
+		//Init properties when at construction step 1
+		//these properties is not initialized!
+		public int Id {set;get;}
+		public string Name {set;get;}
+		public string Address{set;get;}
 	}
 }
 
