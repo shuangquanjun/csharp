@@ -41,6 +41,8 @@
     <Compile Include="Vertex3D.cs" />
     <Compile Include="Vertex3D_impl.cs" />
     <Compile Include="SubVertex3D.cs" />
+    <Compile Include="IInterface.cs" />
+    <Compile Include="Vertex3DInterface_impl.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
