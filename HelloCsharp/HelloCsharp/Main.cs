@@ -16,7 +16,7 @@ namespace HelloCsharp
             Student stud = new Student();
             stud.PrintStudentInfo();
 
-			//Init properties when at construction step 2
+		//Init properties when at construction step 2
 			Student p = new Student() 
 					{ Id = 1, Name = "Ben", Address = "Redmond, WA" };
 			p.PrintStudentInfo();
