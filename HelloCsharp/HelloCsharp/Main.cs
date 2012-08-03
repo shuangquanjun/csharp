@@ -31,6 +31,7 @@ namespace HelloCsharp
             Vertex3D v3d_b   = new Vertex3D(20,30);
             v3d_add = Vertex3D.Add(v3d_a, v3d_b);
             v3d_add.PrintInfo();
+			v3d_add.ToString();
             v3d_add.PrintVersionInfo();
 
             SubVertex3D sv3d = new SubVertex3D();

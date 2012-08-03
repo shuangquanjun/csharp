@@ -81,6 +81,13 @@ namespace HelloCsharp
 
 		//partial method can only be private
 		partial void PartialMethod();
+
+
+		//add toString
+		public override string ToString ()
+		{
+			return string.Format ("[Vertex3D: X={0}, Y={1}]", X, Y);
+		}
     }
 }
 
