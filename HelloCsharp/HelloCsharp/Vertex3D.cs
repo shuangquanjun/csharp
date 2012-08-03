@@ -34,7 +34,8 @@ namespace HelloCsharp
             Console.WriteLine("|-----Certex3D information   !-----|");
             Console.WriteLine("| :x = "+ this._x);
             Console.WriteLine("| :y = "+ this._y);
-            Console.WriteLine("|-----Certex3D information end!----|");
+            PartialMethod();
+			Console.WriteLine("|-----Certex3D information end!----|");
             Console.Write("\n");
 
         }
@@ -77,6 +78,9 @@ namespace HelloCsharp
 
             return ret;
         }
+
+		//partial method can only be private
+		partial void PartialMethod();
     }
 }
 

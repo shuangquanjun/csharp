@@ -50,7 +50,19 @@ namespace HelloCsharp
 			b.m_id = 200;
 			structTest st = new structTest();
 			st.Struct_add(a,b);
-        }
+
+			//test a anonymous class
+			var var1 = new { id = 1, name = "XXXX"};
+			Console.WriteLine("\n|------------test var class------------------|");
+			Console.WriteLine("the index is {0}.", var1.id);
+			Console.WriteLine("the name  is {0}.", var1.name);
+			Console.WriteLine("|------------test var class------------------|\n");
+        	
+
+
+			TestAbstractClass tac = new TestAbstractClass();
+			tac.Test();
+		}
     }
 
     class Operation

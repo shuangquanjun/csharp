@@ -32,6 +32,11 @@ namespace HelloCsharp
             Console.WriteLine("Vertex3D proteced internal method!");
         }
 
+		partial void PartialMethod()
+		{
+			int b = 200;
+			Console.WriteLine("partial value b = : {0}", b);
+		}
     }
 }
 
