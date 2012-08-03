@@ -43,6 +43,7 @@
     <Compile Include="SubVertex3D.cs" />
     <Compile Include="IInterface.cs" />
     <Compile Include="Vertex3DInterface_impl.cs" />
+    <Compile Include="structexample.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

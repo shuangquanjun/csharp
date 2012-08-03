@@ -43,6 +43,13 @@ namespace HelloCsharp
 			v3dInf.Pause();
 			v3dInf.Stop();
 			Console.WriteLine("|*************************************|\n");
+
+			//test stuct operation
+			A a, b;
+			a.m_id = 100;
+			b.m_id = 200;
+			structTest st = new structTest();
+			st.Struct_add(a,b);
         }
     }
 
