@@ -45,6 +45,7 @@
     <Compile Include="Vertex3DInterface_impl.cs" />
     <Compile Include="structexample.cs" />
     <Compile Include="AbstractClass.cs" />
+    <Compile Include="fop.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

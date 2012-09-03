@@ -63,6 +63,11 @@ namespace HelloCsharp
 
 			TestAbstractClass tac = new TestAbstractClass();
 			tac.Test();
+
+			//File operations
+			fop textop = new fop();
+			textop.FileTextOp();
+
 		}
     }
 
